@@ -83,8 +83,8 @@ def playGame():
 		computeWinner(choice, cpuChoice)
 
 		#check if user wants to replay
-		userReplay = input("Enter y or Y to replay, anything else to quit: ")
-		if userReplay not in ["y", "Y"]: replay = False
+		userReplay = input("Enter n or N to quit, anything else to replay: ")
+		if userReplay in ["n", "N"]: replay = False
 
 def computeWinner(userChoice, cpuChoice):
 	if userChoice == cpuChoice: print("Tie!")
